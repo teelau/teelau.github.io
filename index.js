@@ -4,17 +4,22 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
 } from 'react-360';
 
 export default class Tommy360 extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
-        <View style={styles.greetingBox}>
+        {/* <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
             Welcome to React 360
           </Text>
-        </View>
+        </View> */}
+        <Image
+          style={styles.imagebox}
+          source={require('./static_assets/360_lassen.jpg')}
+        />
       </View>
     );
   }
@@ -38,6 +43,11 @@ const styles = StyleSheet.create({
   greeting: {
     fontSize: 30,
   },
+  imagebox: {
+    width:100,
+    height:100,
+  },
 });
 
 AppRegistry.registerComponent('Tommy360', () => Tommy360);
+AppRegistry.registerComponent('Panel', () => Panel)
