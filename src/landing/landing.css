@@ -1,5 +1,6 @@
 .landing-container {
     position:relative;
+    flex:1;
 }
 
 .landing-text {
@@ -16,3 +17,8 @@ h3 {
     letter-spacing: 4px;
     font-size:26px
   }
+
+.vancouver-parallax {
+    position: relative;
+    /* bottom: 0; */
+}
