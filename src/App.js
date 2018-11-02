@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Landing from './landing/landing';
+import Footer from './footer/footer';
+import Body from './body/body';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends Component {
@@ -9,10 +11,10 @@ class App extends Component {
   render() {
     return (
       <ParallaxProvider>
-        <div className="Main">
+        <div className="Landing">
           <Landing></Landing>
-          <div className="Landing">
-          </div>
+          <Body></Body>
+          <Footer></Footer>
             <p>
               Edit <code>src/App.js</code> and save to reload.
             </p>
@@ -24,7 +26,7 @@ class App extends Component {
             >
               Learn React
             </a>
-        </div>
+        </div> {/*Landing*/}
       </ParallaxProvider>
     );
   }

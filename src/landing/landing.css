@@ -1,6 +1,7 @@
 .landing-container {
-    position:relative;
-    flex:1;
+    /* position:relative; */
+    flex-direction: column;
+    align-content: flex-end;
 }
 
 .landing-text {
@@ -12,13 +13,27 @@
 }
 
 h3 {
-    font-weight: 100;
+    font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size:26px
+    font-size:32px
   }
 
 .vancouver-parallax {
-    position: relative;
-    /* bottom: 0; */
+    width: 100%;
+}
+
+.parallax-container {
+    width:100%;
+    bottom:0;
+    overflow: hidden;
+    /* height:150%; */
+}
+
+.bgimg {
+    background-image: url('./vancouver_skyline_vec.svg');
+    transform: scale(1.1);
+    background-position: bottom;
+    background-size: cover;
+    filter: blur(2px);
 }

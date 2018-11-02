@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './landing.css';
 import { Parallax } from 'react-scroll-parallax';
-import VancouverMountains from './vancouver_skyline_vec.svg';
+import PropTypes from 'prop-types'
 
-const ParallaxImage = () => (
+const ParallaxImage = (e) => (
     <Parallax
-        className="vancouver-parallax"
-        offsetYMax={0}
-        offsetYMin={-50}
-        offsetXMax={-25}
-        offsetXMin={25}
+        className="parallax-container"
+        offsetXMax={10}
+        offsetXMin={-7}
         slowerScrollRate
     >
-        <img src={VancouverMountains} alt="Could not display VANCOUVER_ASSET properly"/>
+        <div className="bgimg"
+            style={{"height": e.height}}>
+        </div>
     </Parallax>
 );
   
@@ -24,6 +24,19 @@ class Landing extends Component {
             scrollTo: props.height
         };
     }
+    static contextTypes = {
+        parallaxController: PropTypes.object.isRequired,
+    };
+    
+    componentDidUpdate() {
+        this.handleLoad();
+    }
+
+    handleLoad = () => {
+        // updates cached values after image dimensions have loaded
+        this.context.parallaxController.update();
+    };
+
     updateHeight() {
         this.setState({
             height: window.innerHeight+'px',
@@ -44,15 +57,11 @@ class Landing extends Component {
                 className="landing-container" 
                 style={{"height": this.state.height}}
             >
-            <div className="landing-text">
-                <h3>Tommy Lau</h3>
+                <div className="landing-text">
+                    <h3>Tommy Lau</h3>
+                </div>
+                    {ParallaxImage(this.state)} 
             </div>
-
-                {ParallaxImage()}
-
-                
-            </div>
-            
         );
     }
 }
