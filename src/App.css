@@ -1,11 +1,11 @@
-.Main {
+.asdf {
   text-align:center;
   background-color: #FFFFFF;
   display:block;
 }
 
-.Landing {
-  /* flex-direction: row; */
+.Main {
+  /* flex-direction: column; */
   background-color: rgb(255, 255, 255);
   width:100%;
 }

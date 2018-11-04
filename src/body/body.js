@@ -12,6 +12,11 @@ class Body extends Component {
     render() {
         return (
             <div>
+            <div></div>
+            <div>I like going outside</div>
+            <div>I've studied a bit</div>
+            <div>I've worked a bit</div>
+            <div>I've made a few things</div>
             </div>
         );
     }

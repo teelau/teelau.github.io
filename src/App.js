@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <ParallaxProvider>
-        <div className="Landing">
+        <div className="Main">
           <Landing></Landing>
           <Body></Body>
           <Footer></Footer>
