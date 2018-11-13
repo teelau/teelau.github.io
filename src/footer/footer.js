@@ -8,10 +8,22 @@ const ParallaxImage2 = (e) => (
         className="parallax-container-footer"
         offsetXMax={-15}
         offsetXMin={15}
+        offsetYMax={20}
+        offsetYMin={20}
         slowerScrollRate
     >
-        <div className="bgimg-footer">
-        </div>
+        <img className="bgimg-footer-1" src={require('./mountains.svg')} alt=""></img>
+    </Parallax>
+);
+
+const ParallaxImage3 = (e) => (
+    <Parallax
+        className="parallax-container-footer"
+        offsetXMax={-90}
+        offsetXMin={-100}
+        slowerScrollRate
+    >
+        <img className="bgimg-footer-2" src={require('./mountains.svg')} alt=""></img>
     </Parallax>
 );
 
@@ -39,12 +51,8 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer-container">
-                <div>Hello</div>
-                
-                <div>
                 {ParallaxImage2(this.state)}
-                </div>
-
+                {ParallaxImage3(this.state)}
             </div>
         );
     }

@@ -1,22 +1,30 @@
 .footer-container {
-    position: relative;
-    height: 400px;
+    /* position: relative; */
+    height: 300px;
     flex-direction: column;
     align-content: flex-end;
+    position: relative;
 }
 
 .parallax-container-footer {
     width:100%;
     bottom:0;
     overflow: hidden;
+    height:300px;
     /* height:150%; */
+    position: absolute;
 }
 
-.bgimg-footer{
-    background-image: url('./mountains.png');
-    transform: scale(1.3);
-    background-position: bottom;
-    background-size: cover;
-    filter: blur(0px);
+.bgimg-footer-1{
+    filter: blur(2px);
     height: 300px;
+    z-index: 3;
 }
+
+.bgimg-footer-2{
+    filter: blur(3px);
+    height: 300px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
