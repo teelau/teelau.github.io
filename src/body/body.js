@@ -11,12 +11,34 @@ class Body extends Component {
 
     render() {
         return (
-            <div>
-            <div></div>
-            <div>I like going outside</div>
-            <div>I've studied a bit</div>
-            <div>I've worked a bit</div>
-            <div>I've made a few things</div>
+            <div className="body-container">
+                <div className="button-container">
+                    <a href="about:blank">
+                        <span className="theme-button" href="about:blank">
+                            resume
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lautommy/">
+                        <span className="theme-button">
+                            linkedin
+                        </span>
+                    </a>
+                    <a href="https://github.com/teelau">
+                        <span className="theme-button">
+                            github
+                        </span>
+                    </a>
+                    <a>
+                        <span className="theme-button">
+                            contact
+                        </span>
+                    </a>
+                    <a href="about:blank">
+                        <span className="theme-button">
+                            projects
+                        </span>
+                    </a>
+                </div>
             </div>
         );
     }

@@ -13,6 +13,9 @@ const ParallaxImage2 = (e) => (
         slowerScrollRate
     >
         <img className="bgimg-footer-1" src={require('./mountains.svg')} alt=""></img>
+        {/* <div className="bgimg-footer-1"
+            style={{"height": 300}}>
+        </div> */}
     </Parallax>
 );
 
@@ -24,6 +27,9 @@ const ParallaxImage3 = (e) => (
         slowerScrollRate
     >
         <img className="bgimg-footer-2" src={require('./mountains.svg')} alt=""></img>
+        {/* <div className="bgimg-footer-2"
+            style={{"height": 300}}>
+        </div> */}
     </Parallax>
 );
 
