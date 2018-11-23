@@ -33,11 +33,6 @@ class Body extends Component {
                             contact
                         </span>
                     </a>
-                    {/* <a href="about:blank" target="_blank">
-                        <span className="theme-button">
-                            projects
-                        </span>
-                    </a> */}
                 </div>
             </div>
         );

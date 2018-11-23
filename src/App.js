@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import Landing from './landing/landing';
 import Footer from './footer/footer';
@@ -15,7 +14,7 @@ class App extends Component {
           <Landing></Landing>
           <Body></Body>
           <Footer></Footer>
-        </div> {/*Main*/}
+        </div>
       </ParallaxProvider>
     );
   }

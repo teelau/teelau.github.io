@@ -14,7 +14,6 @@
 
 h3 {
     font-weight: 200;
-    /* text-transform: uppercase; */
     letter-spacing: 4px;
     font-size:32px
   }
@@ -23,7 +22,6 @@ h3 {
     width:100%;
     bottom:0;
     overflow: hidden;
-    /* height:150%; */
 }
 
 .bgimg {
@@ -31,5 +29,4 @@ h3 {
     transform: scale(1.1);
     background-position: bottom;
     background-size: cover;
-    /* filter: blur(2px); */
 }
