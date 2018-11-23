@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "79c2d1b44317cdee2621",
-    "url": "/static/css/main.975aad2a.chunk.css"
+    "revision": "c0047555ad4ebfa294b1",
+    "url": "/static/css/main.622a7267.chunk.css"
   },
   {
-    "revision": "79c2d1b44317cdee2621",
-    "url": "/static/js/main.79c2d1b4.chunk.js"
+    "revision": "c0047555ad4ebfa294b1",
+    "url": "/static/js/main.c0047555.chunk.js"
   },
   {
     "revision": "f29a51c363b04e10b221",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/static/media/vancouver_skyline_vec.40531492.svg"
   },
   {
-    "revision": "4f10c73a1766c6fd3c412521b767adf8",
+    "revision": "8ebb632c5ff4a82fff049ceb3492c81e",
     "url": "/index.html"
   }
 ];
