@@ -13,31 +13,31 @@ class Body extends Component {
         return (
             <div className="body-container">
                 <div className="button-container">
-                    <a href="about:blank">
-                        <span className="theme-button" href="about:blank">
+                    <a href="TommyLauResume.pdf" target="_blank" rel="noopener noreferrer">
+                        <span className="theme-button">
                             resume
                         </span>
                     </a>
-                    <a href="https://www.linkedin.com/in/lautommy/">
+                    <a href="https://www.linkedin.com/in/lautommy/" target="_blank" rel="noopener noreferrer">
                         <span className="theme-button">
                             linkedin
                         </span>
                     </a>
-                    <a href="https://github.com/teelau">
+                    <a href="https://github.com/teelau" target="_blank" rel="noopener noreferrer">
                         <span className="theme-button">
                             github
                         </span>
                     </a>
-                    <a>
+                    <a href="mailto:tommylau94@gmail.com">
                         <span className="theme-button">
                             contact
                         </span>
                     </a>
-                    <a href="about:blank">
+                    {/* <a href="about:blank" target="_blank">
                         <span className="theme-button">
                             projects
                         </span>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         );
