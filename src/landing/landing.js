@@ -58,7 +58,7 @@ class Landing extends Component {
                 style={{"height": this.state.height}}
             >
                 <div className="landing-text">
-                    <h3>Tommy Lau</h3>
+                    <h3>tommy lau</h3>
                 </div>
                     {ParallaxImage(this.state)} 
             </div>

@@ -6,10 +6,10 @@ import PropTypes from 'prop-types'
 const ParallaxImage2 = (e) => (
     <Parallax
         className="parallax-container-footer"
-        offsetXMax={-15}
-        offsetXMin={15}
-        offsetYMax={20}
-        offsetYMin={20}
+        offsetXMax={-25}
+        offsetXMin={5}
+        offsetYMax={10}
+        offsetYMin={10}
         slowerScrollRate
     >
         <img className="bgimg-footer-1" src={require('./mountains.svg')} alt=""></img>
@@ -22,8 +22,8 @@ const ParallaxImage2 = (e) => (
 const ParallaxImage3 = (e) => (
     <Parallax
         className="parallax-container-footer"
-        offsetXMax={-90}
-        offsetXMin={-100}
+        offsetXMax={0}
+        offsetXMin={-15}
         slowerScrollRate
     >
         <img className="bgimg-footer-2" src={require('./mountains.svg')} alt=""></img>

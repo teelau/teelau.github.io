@@ -25,21 +25,27 @@
     padding: 5px 10px 5px;
     transition: all .4s ease-out;
 
-    background-repeat: no-repeat;
-    background: linear-gradient(90deg,white, white, gray);
-    background-position: -50%, 150;
-    background-size: 300% 100%;
-
+    /* background-repeat: no-repeat; */
+    /* background: linear-gradient(90deg,white, white, gray); */
+    background: white;
+    /* background-position: -50%, 150; */
+    /* background-size: 300% 100%; */
+    border-radius: 25px;
     text-decoration: none;
     border-style: solid;
     border: 1px solid;
   }
   
+.theme-button:visited {
+    color:black;
+}
 .theme-button:hover {   
 color: white;
-border-color: gray;
+border-color: black;
+/* font-style: bold; */
 /* border: 1px solid rgba(black, 0); */
-background-position: 100%, 75%;
+background: black;
+/* background-position: 100%, 75%; */
 }
   
 
