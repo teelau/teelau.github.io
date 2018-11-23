@@ -1,5 +1,5 @@
 .landing-container {
-    /* position:relative; */
+    position:relative;
     flex-direction: column;
     align-content: flex-end;
 }
