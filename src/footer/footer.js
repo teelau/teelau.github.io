@@ -3,20 +3,20 @@ import './footer.css';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types'
 
-const ParallaxImage2 = (e) => (
+const ParallaxImage2 = () => (
     <Parallax
         className="parallax-container-footer"
         offsetXMax={-25}
         offsetXMin={5}
         offsetYMax={10}
-        offsetYMin={0}
+        offsetYMin={10}
         slowerScrollRate
     >
         <img className="bgimg-footer-1" src={require('./mountains.svg')} alt=""></img>
     </Parallax>
 );
 
-const ParallaxImage3 = (e) => (
+const ParallaxImage3 = () => (
     <Parallax
         className="parallax-container-footer"
         offsetXMax={0}
@@ -28,12 +28,6 @@ const ParallaxImage3 = (e) => (
 );
 
 class Footer extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            height: props.height,
-        };
-    }
 
     static contextTypes = {
         parallaxController: PropTypes.object.isRequired,
@@ -51,8 +45,8 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer-container">
-                {ParallaxImage2(this.state)}
-                {ParallaxImage3(this.state)}
+                {ParallaxImage2()}
+                {ParallaxImage3()}
             </div>
         );
     }
