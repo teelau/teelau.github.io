@@ -11,7 +11,8 @@ const ParallaxImage = (e) => (
         slowerScrollRate
     >
         <div className="bgimg"
-            style={{"height": e.height}}>
+            // style={{"height": e.height}}
+            >
         </div>
     </Parallax>
 );
@@ -20,8 +21,8 @@ class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            height: props.height,
-            scrollTo: props.height
+            // height: props.height,
+            // scrollTo: props.height
         };
     }
     static contextTypes = {
@@ -39,28 +40,28 @@ class Landing extends Component {
 
     updateHeight() {
         this.setState({
-            height: window.innerHeight+'px',
-            scrollTo: window.innerHeight
+            // height: window.innerHeight+'px',
+            // scrollTo: window.innerHeight
         });
     }
-    async componentDidMount() {
-        window.addEventListener("resize", this.updateHeight.bind(this));
-        this.updateHeight();
-    }
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updateHeight.bind(this));
-    }
+    // async componentDidMount() {
+    //     window.addEventListener("resize", this.updateHeight.bind(this));
+    //     this.updateHeight();
+    // }
+    // componentWillUnmount() {
+    //     window.removeEventListener("resize", this.updateHeight.bind(this));
+    // }
 
     render() {
         return (
             <div
                 className="landing-container" 
-                style={{"height": this.state.height}}
+                // style={{"height": this.state.height}}
             >
                 <div className="landing-text">
                     <h3>tommy lau</h3>
                 </div>
-                    {ParallaxImage(this.state)} 
+                    {ParallaxImage()} 
             </div>
         );
     }

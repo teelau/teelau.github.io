@@ -9,7 +9,7 @@ const ParallaxImage2 = (e) => (
         offsetXMax={-25}
         offsetXMin={5}
         offsetYMax={10}
-        offsetYMin={10}
+        offsetYMin={0}
         slowerScrollRate
     >
         <img className="bgimg-footer-1" src={require('./mountains.svg')} alt=""></img>
