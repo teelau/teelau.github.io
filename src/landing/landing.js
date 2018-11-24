@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './landing.css';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types'
+import Fade from 'react-reveal/Fade';
 
 const ParallaxImage = () => (
     <Parallax
@@ -33,7 +34,9 @@ class Landing extends Component {
         return (
             <div className="landing-container" >
                 <div className="landing-text">
-                    <h3>tommy lau</h3>
+                    <Fade bottom>
+                        <h3>tommy lau</h3>
+                    </Fade>
                 </div>
                  {ParallaxImage()} 
             </div>
