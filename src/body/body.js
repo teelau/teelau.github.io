@@ -11,7 +11,7 @@ class Body extends Component {
 
     render() {
         return (
-            <div className="body-container">
+            <div>
                 <div className="button-container">
                     <a href="TommyLauResume.pdf" target="_blank" rel="noopener noreferrer">
                         <span className="theme-button">
