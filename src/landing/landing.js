@@ -4,6 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types'
 import Fade from 'react-reveal/Fade';
 
+const renderDelay_ms = 2500;
 const ParallaxImage = () => (
     <Parallax
         className="parallax-container"
@@ -20,7 +21,7 @@ class Landing extends Component {
     static contextTypes = {
         parallaxController: PropTypes.object.isRequired,
     };
-    
+
     componentDidUpdate() {
         this.handleLoad();
     }
@@ -34,7 +35,7 @@ class Landing extends Component {
         return (
             <div className="landing-container" >
                 <div className="landing-text">
-                    <Fade bottom>
+                    <Fade bottom duration={renderDelay_ms}>
                         <h3>tommy lau</h3>
                     </Fade>
                 </div>
