@@ -1,5 +1,5 @@
 .footer-container {
-    height: 100px;
+    height: 20vh;
     flex-direction: column;
     align-content: flex-end;
     position: relative;
@@ -8,21 +8,30 @@
 .parallax-container-footer {
     width:100%;
     overflow: hidden;
-    height:200px;
+    height: 30vh;
     position: absolute;
 }
 
-.bgimg-footer-1{
-    height: 270px;
-    z-index: 3;
-    background-position: bottom;
+.bgimg1 {
+    background-image: url('./mountains.svg');
+    /* transform: scale(1.1); */
+    background-position: top;
     background-size: cover;
+    transform: translate(5%, 0);
+    z-index: 10;
+    height:40vh;
+    width:140%
 }
 
-.bgimg-footer-2{
-    height: 220px;
-    z-index: 2;
-    opacity: 0.5;
+.bgimg2 {
+    background-image: url('./mountains.svg');
+    /* transform: scale(1.1); */
+    background-position: top;
+    background-size: cover;
     transform: scaleX(-1);
+    transform: translate(-20%, 0);
+    z-index: 9;
+    height:30vh;
+    filter: opacity(50%);
+    width:120%
 }
-
