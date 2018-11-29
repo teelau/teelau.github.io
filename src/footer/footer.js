@@ -6,8 +6,8 @@ import PropTypes from 'prop-types'
 const ParallaxImage2 = () => (
     <Parallax
         className="parallax-container-footer"
-        offsetXMax={-30}
-        offsetXMin={60}
+        offsetXMax={-20}
+        offsetXMin={20}
         offsetYMax={10}
         offsetYMin={10}
         slowerScrollRate
