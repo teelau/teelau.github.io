@@ -38,6 +38,9 @@ class Landing extends Component {
                     <Fade bottom duration={renderDelay_ms}>
                         <h3>tommy lau</h3>
                     </Fade>
+                    <Fade bottom duration={renderDelay_ms*2}>
+                        <h4>aspiring software engineer</h4>
+                    </Fade>
                 </div>
                  {ParallaxImage()} 
             </div>
